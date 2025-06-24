@@ -1,0 +1,24 @@
+<svg id="Add_Embroidery_MAR2023" data-name="Add Embroidery MAR2023" xmlns="http://www.w3.org/2000/svg" width="349" height="92" viewBox="0 0 349 92">
+  <g id="Group_8928" data-name="Group 8928" transform="translate(-1266.25 -1332.589)">
+    <g id="Group_8926" data-name="Group 8926" transform="translate(1266.25 1332.589)">
+      <rect id="Rectangle_5612" data-name="Rectangle 5612" width="349" height="92" rx="6" fill="#f6f6f6"/>
+    </g>
+    <g id="Group_8933" data-name="Group 8933" transform="translate(0 1)">
+      <g id="Group_8929" data-name="Group 8929" transform="translate(1320.25 1347.589)">
+        <text id="Add_Embroidery" data-name="Add Embroidery" transform="translate(-0.001 18)" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Add Embroidery</tspan></text>
+      </g>
+      <g id="Group_8930" data-name="Group 8930" transform="translate(1289.254 1373.589)">
+        <text id="Select_options_once_you_Add_to_Bag_" data-name="Select options once you ‘Add to Bag’" transform="translate(30.997 15)" fill="#777" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="0" y="11">Select options once you ‘Add to Bag’</tspan></text>
+        <text id="From_7.99" data-name="From $7.99" transform="translate(30.997 -1)" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="13">From $7.99</tspan></text>
+      </g>
+    </g>
+    <g id="Group_8931" data-name="Group 8931">
+      <rect id="Rectangle_5618" data-name="Rectangle 5618" width="20" height="20" rx="2" transform="translate(1281.25 1368.589)" fill="#404040"/>
+      <path id="Icon_feather-check" data-name="Icon feather-check" d="M16,9,9.125,16,6,12.818" transform="translate(1280.25 1366.089)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g id="Rectangle_5619" data-name="Rectangle 5619" transform="translate(1281.25 1368.589)" fill="#f6f6f6" stroke="#000" stroke-width="1">
+      <rect width="20" height="20" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" rx="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

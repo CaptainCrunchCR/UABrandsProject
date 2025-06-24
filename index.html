@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick View Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quickViewModal">
+            Quick View
+        </button>
+    </div>
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="container-fluid">
+
+                        <div class="row product-details">
+                            <div class="col-6 col-md-6 d-flex align-items-center">
+                                <h6 class="text-muted mb-0">STYLE # ABCD1234</h6>
+                            </div>
+                            <div class="col-6 col-md-6 d-flex justify-content-end product-details">
+                                <a href="#" class="view-detail ml-2">View Full Detail</a>
+                            </div>
+                        </div>
+                        <div class="row product-details mt-1 d-flex flex-wrap flex-md-nowrap">
+                            <div class="col-12 col-md-8 order-1 order-md-2">
+                                <h2 class="mb-2">Product name goes here. Product name goes here.</h2>
+                            </div>
+                            <div class="col-12 col-md-4 order-2 order-md-2 text-md-end mb-2 mb-md-0">
+                                <h3 class="price-range">
+                                    <span class="red-clr">$00.00</span> - $00.00
+                                </h3>
+                                <p class="price-add-info mb-2">2X–3X add $3, 4X–5X add $4</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-12">
+                                <div class="product-rating">
+                                    <span class="stars">
+                                        <img src="assets/images/Icon ionic-ios-star-full.svg" alt="star">
+                                        <img src="assets/images/Icon ionic-ios-star-full.svg" alt="star">
+                                        <img src="assets/images/Icon ionic-ios-star-full.svg" alt="star">
+                                        <img src="assets/images/Icon material-star-half.svg" alt="star">
+                                        <img src="assets/images/Icon ionic-ios-star-empty.svg" alt="star">
+                                    </span>
+                                    <span class="rating-count">(3050)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 product-image">
+                                <img src="assets/images/Image 280.png" class="img-fluid" alt="Product Image">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="product-details">
+                                    <div class="btn-group btn-group-toggle mb-3 fit-options d-flex flex-wrap justify-content-center justify-content-md-start" data-toggle="buttons">
+                                        <label class="btn btn-outline-secondary active m-1">
+                                            <input type="radio" name="options" id="option1" checked> Regular
+                                        </label>
+                                        <label class="btn btn-outline-secondary m-1">
+                                            <input type="radio" name="options" id="option2"> Petite
+                                        </label>
+                                        <label class="btn btn-outline-secondary m-1">
+                                            <input type="radio" name="options" id="option3"> Tall
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group color-dropdown">
+                                        <label for="colorDropdown">COLORS</label>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle custom-dropdown-toggle" type="button" id="colorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="swatch-preview" style="background-color: #A6A6A6;"></span>
+                                            <span class="selected-label">Swatch name</span>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="colorDropdown">
+                                            <a class="dropdown-item" href="#" data-color="#005C83"><span class="color-circle" style="background-color: #005C83;"></span>Blue Sapphire</a>
+                                            <a class="dropdown-item" href="#" data-color="#163C44"><span class="color-circle" style="background-color: #163C44;"></span>Caribbean Blue w/ Navy</a>
+                                            <a class="dropdown-item" href="#" data-color="#7798E0"><span class="color-circle" style="background-color: #7798E0;"></span>Ceil Blue</a>
+                                            <a class="dropdown-item" href="#" data-color="#4B1248"><span class="color-circle" style="background-color: #4B1248;"></span>Eggplant</a>
+                                            <a class="dropdown-item" href="#" data-color="#006A52"><span class="color-circle" style="background-color: #006A52;"></span>Hunter</a>
+                                            <a class="dropdown-item" href="#" data-color="#2B2D42"><span class="color-circle" style="background-color: #2B2D42;"></span>Navy</a>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                <div class="size-container my-3">
+                                    <div class="d-flex justify-content-between align-items-center size-info">
+                                        <div>
+                                        <span class="size-label">SIZE:</span>
+                                        <span id="selected-size" class="mr-2">XXS</span>
+                                        <span class="price-label">PRICE:</span>
+                                        <span id="selected-price">$26.99</span>
+                                        </div>
+                                        <div id="availability-message" class="text-danger">Hurry! Only 7 available.</div>
+                                    </div>
+
+                                    <div class="btn-toolbar mt-2 size-buttons d-flex flex-wrap justify-content-center justify-content-md-start" role="toolbar">
+    
+                                        <div class="btn-group mr-md-1 mb-2 d-flex flex-wrap" role="group">
+                                            <button type="button" class="btn size-btn m-1" data-size="XXS" data-price="26.99">XXS</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="XS" data-price="27.99">XS</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="S" data-price="28.99">S</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="M" data-price="29.99">M</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="L" data-price="30.99">L</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="XL" data-price="31.99">XL</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="2X" data-price="32.99">2X</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="3X" data-price="33.99">3X</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="4X" data-price="34.99">4X</button>
+                                            <button type="button" class="btn size-btn m-1" data-size="5X" data-price="35.99">5X</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    
+                                    <div class="embroidery-box mb-4">
+                                        <input class="form-check-input embroidery-checkbox" type="checkbox" id="addEmbroidery">
+                                        <div class="embroidery-content">
+                                          <h5 class="mb-0">Add Embroidery</h5>
+                                          <div class="price">From $7.99</div>
+                                          <div class="subtext mt-0">Select options once you ‘Add to Bag’</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="input-group quantity-selector">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-secondary quantity-btn" type="button" id="minus-btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="quantity-input-cls form-control text-center" value="1" id="quantity-input" readonly="">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary quantity-btn" type="button" id="plus-btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-dark btn-block ml-3 add-to-bag-btn">ADD TO BAG</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
