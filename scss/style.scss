@@ -11,12 +11,15 @@ body {
 
 #quickViewModal {
   .modal-dialog {
-    max-width: 750px;
+    max-width: 750px; 
+    opacity: 1;
   }
 
   .modal-content {
-    border-radius: 8px;
+    border-radius: 12px; //BORDER RADIUS CHANGE FROM 8PX TO 12PX
     border: none;
+    background: #ffffff 0% 0% no-repeat padding-box; //BACKGROUND RULE ADDED
+    opacity: 1;
   }
 
   .modal-header {
@@ -26,6 +29,10 @@ body {
     .close {
       padding: 0.5rem;
       margin: -0.5rem -0.5rem -0.5rem auto;
+      color: $black;
+      opacity: 1; //Set to 1, button should be bolder
+      font-size: 2.5rem; //Button size increased, should be bigger
+      font-weight: lighter; //Button should be lighter in the lines
     }
   }
 
@@ -71,296 +78,315 @@ body {
       text-transform: uppercase;
     }
     h2 {
-      font-size: 22px;
-      line-height: 25px;
-      font-weight: 400;
+      font: normal normal normal 22px/25px Roboto; //Changed to a single line
+      letter-spacing: 0px; 
+      color: $black; 
+      margin-bottom: 1rem; 
+      opacity: 1;
+      font-weight: 450;
+    }
+  }
+
+  .product-rating {
+    display: flex;
+    align-items: baseline; //CHANGE: (3050) was aligned to baseline instead of being just in center
+    gap: 4px;
+    margin-bottom: 1rem;
+    .stars {
+      color: $star-gold;
+      img {
+        width: 14px;
+        height: 13px;
+        margin-right: 2px;
+      }
+    }
+    .rating-count {
+      line-height: 20px;
+      font-size: 14px;
+      font: normal normal normal 14px/20px Roboto;
       letter-spacing: 0px;
       color: $black;
-      margin-bottom: 1rem;
+      text-transform: capitalize;
+      opacity: 1;
+      font-weight: 500;
+    }
+  }
+
+  .view-detail {
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: $dark-gray;
+    padding-right: 10px; //View Full Detail title changed to have a padding right of 10px
+  }
+
+  .price-range {
+    font: normal normal normal bold 26px/30px Roboto; //Font parameters changed in one line
+    letter-spacing: 0px; 
+    opacity: 1; //$00.00 opacity is now 1
+    color: $black; //$00.00 not highlighted in red is now completely black
+    .red-clr {
+      color: $red;
+    }
+  }
+
+  .price-add-info {
+    font: normal normal normal 14px/15px Roboto; //Font properties inline
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: $black;
+    opacity: 1; //Changed opacity to be 1
+  }
+
+  .fit-options {
+    .btn {
+      width: 100px; //Changed from 110px to 100px
+      height: 34px; 
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-transform: capitalize; 
+      padding: 0;
+      margin-right: 0.5rem !important;
+      margin-left: 0 !important; //Changed margin left to 0
+      border-radius: 6px !important; 
+      border: 1px solid #A6A6A6; 
+      background-color: $white;
+      color: $fit-btn-text-inactive;
+      text-align: center;
+      opacity: 1; //WAIT
+      .btn-text{
+        font-size: 16px;
+        line-height: 28px;
+        text-align:center;
+        padding-top: 2px;
+        display: block;
+      }
+      &.active {
+        background: #000000 0% 0% no-repeat padding-box; //Background color inline
+        color: $white;
+        border-color: #000000;
+        font-weight: 500;
+      }
+      &:hover {
+        border-color: #000000;
+      }
+    }
+  }
+
+  .fit-options {
+    .btn,
+    .btn:focus,
+    .btn:focus-visible,
+    input:focus,
+    label:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .color-selector {
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .custom-select {
+      border-radius: 6px;
+      border: 1px solid $light-gray;
+      height: auto;
+      padding: 0.75rem;
+      background-color: $faint-gray-2;
+    }
+  }
+
+  .color-dropdown {
+    label {
+      font: normal normal bold 12px/14px Roboto;
+      margin-bottom: 0.5rem;
+      opacity: 1;
+      color: $black; //Assigned color black in COLORS and opacity now is 1
+      letter-spacing: 1.2px; //Letter spacing assigned to 1.2px in COLORS
+      text-transform: uppercase;
     }
 
-    .product-rating {
+    .dropdown-toggle.custom-dropdown-toggle {
       display: flex;
       align-items: center;
-      margin-bottom: 1rem;
-      .stars {
-        color: $star-gold;
-        img {
-          width: 14px;
-          height: 13px;
-          margin-right: 2px;
-        }
-      }
-    }
-
-    .rating-count,
-    .view-detail {
-      font-size: 14px;
-      color: $mid-gray;
-      margin-left: 0.5rem;
-    }
-    .view-detail {
-      text-decoration: underline;
-      font-size: 14px;
-      line-height: 21px;
-      font-weight: 400;
-      letter-spacing: 0px;
-      color: $dark-gray;
-    }
-
-    .price-range {
-      font-size: 26px;
-      line-height: 30px;
-      font-weight: 700;
-      letter-spacing: 0px;
-      //   text-align: right;
-
-      .red-clr {
-        color: $red;
-      }
-    }
-
-    .price-add-info {
-      font-size: 14px;
-      line-height: 15px;
-      font-weight: 400;
-      letter-spacing: 0px;
+      justify-content: flex-start;
+      gap: 0.75rem;
+      width: 100%;
+      border: 1px solid $light-gray; //Changed from Dark gray to light gray
+      border-radius: 6px; 
+      padding: 1.125rem 1rem;
+      background: $faint-gray-2 0% 0% no-repeat padding-box;
       color: $black;
-      //   text-align: right;
-    }
+      font-size: 15px;
+      text-align: left; // Force left alignment of all contents
+      justify-content: flex-start;
 
-    .fit-options {
-      .btn {
-        width: 110px;
-        height: 34px;
-        font-size: 16px;
-        line-height: 32px;
-        font-weight: 400;
-        letter-spacing: 0px;
-        text-transform: capitalize;
-        padding: 0;
-        margin-right: 0.5rem;
-        border-radius: 6px !important;
-        border: 1px solid #a6a6a6;
-        background-color: $white;
-        color: $fit-btn-text-inactive;
-        text-align: center;
-
-        &.active {
-          background-color: #000000;
-          color: $white;
-          border-color: #000000;
-          font-weight: 500;
-        }
-        &:hover {
-          border-color: #000000;
-        }
-      }
-    }
-
-    .fit-options {
-      .btn,
-      .btn:focus,
-      .btn:focus-visible,
-      input:focus,
-      label:focus {
-        outline: none !important;
-        box-shadow: none !important;
-      }
-    }
-
-    .color-selector {
-      label {
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 0.5rem;
-      }
-      .custom-select {
-        border-radius: 6px;
+      .swatch-preview {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
         border: 1px solid $light-gray;
-        height: auto;
-        padding: 0.75rem;
-        background-color: $faint-gray-2;
+      }
+
+      .selected-label {
+        flex-grow: 1;
+      }
+
+      &::after {
+        margin-left: auto;
       }
     }
 
-    .color-dropdown {
-      label {
-        font-size: 13px;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-      }
+    .dropdown-menu {
+      width: 100%;
+      border-radius: 6px;
+      padding: 0;
+      max-height: 280px;
+      overflow-y: auto;
 
-      .dropdown-toggle.custom-dropdown-toggle {
+      .dropdown-item {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        gap: 0.75rem;
-        width: 100%;
-        border: 1px solid $dark-gray;
-        border-radius: 6px;
-        padding: 1.125rem 1rem;
-        background-color: $faint-gray-2;
-        color: $black;
-        font-size: 15px;
-        text-align: left; // Force left alignment of all contents
-        justify-content: flex-start;
-
-        .swatch-preview {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          border: 1px solid $light-gray;
-        }
-
-        .selected-label {
-          flex-grow: 1;
-        }
-
-        &::after {
-          margin-left: auto;
-        }
-      }
-
-      .dropdown-menu {
-        width: 100%;
-        border-radius: 6px;
-        padding: 0;
-        max-height: 280px;
-        overflow-y: auto;
-
-        .dropdown-item {
-          display: flex;
-          align-items: center;
-          font-size: 14px;
-          font-weight: 500;
-          padding: 0.65rem 1rem;
-          color: $black;
-
-          &:hover {
-            background-color: $faint-gray;
-          }
-
-          .color-circle {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            margin-right: 10px;
-            border: 1px solid $light-gray;
-            display: inline-block;
-          }
-        }
-      }
-    }
-
-    .size-info {
-      .size-label,
-      .price-label {
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 700;
-        letter-spacing: 1.2px;
-        color: $black;
-        text-transform: uppercase;
-      }
-      #selected-size,
-      #selected-price {
-        font-size: 12px;
-        font-weight: 400;
-        color: $dark-gray;
-      }
-      #availability-message {
         font-size: 14px;
-        font-weight: 400;
-        font-style: italic;
-      }
-    }
-
-    .size-buttons {
-      .size-btn {
-        border: 1px solid $light-gray;
-        border-radius: 6px;
-        background-color: #f6f6f6;
+        font-weight: 500;
+        padding: 0.65rem 1rem;
         color: $black;
-        min-width: 62px;
-        max-width: 62px;
-        padding: 0.75rem 0.5rem;
-        font-size: 14px;
-        margin: 4px;
-        font-weight: 400;
-        transition: all 0.2s;
 
         &:hover {
-          border-color: $mid-gray;
-          background-color: #f6f6f6;
+          background-color: $faint-gray;
         }
 
-        &.active {
-          border-color: $black !important;
-          background-color: #f6f6f6;
+        .color-circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 10px;
+          border: 1px solid $light-gray;
+          display: inline-block;
         }
       }
     }
+  }
 
-    .size-btn:focus {
-      outline: none;
-      box-shadow: none;
+  .size-info {
+    .size-label,
+    .price-label {
+      font-size: 12px;
+      line-height: 14px; 
+      font-weight: bold; //Changed from 700 to bold
+      letter-spacing: 1.2px; 
+      color: $black; 
+      text-transform: uppercase; 
     }
-
-    .embroidery-option {
-      background-color: transparent;
-      border: none !important;
-      padding: 0 !important;
-
-      .custom-control-label::before {
-        background-color: $white;
-        border-color: $mid-gray;
-        border-radius: 0;
-        height: 20px;
-        width: 20px;
-      }
-
-      .custom-control-input:checked ~ .custom-control-label::before {
-        background-color: $primary-blue;
-        border-color: $primary-blue;
-      }
-
-      .custom-control-label {
-        padding-top: 2px;
-      }
-    }
-
-    .quantity-selector {
-      border: 1px solid $light-gray;
-      border-radius: 6px;
-      background-color: $white;
-      padding: 0;
-
-      .btn,
-      .form-control {
-        border: none;
-        background-color: transparent;
-      }
-
-      .form-control {
-        border-left: 1px solid $light-gray;
-        border-right: 1px solid $light-gray;
-        background-color: transparent !important;
-      }
-    }
-
-    .add-to-bag-btn {
-      max-width: 150px;
-      background: #000000 0% 0% no-repeat padding-box;
-      border-radius: 6px;
-      opacity: 1;
-      color: $white;
-      padding: 0.75rem;
-      font-size: 16px;
-      line-height: 19px;
+    #selected-size,
+    #selected-price {
+      font-size: 12px;
       font-weight: 400;
+      color: $dark-gray;
+    }
+    #availability-message {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  .size-buttons {
+    .size-btn {
+      border: none; //Border removed completely
+      border-radius: 6px;
+      background-color: #f6f6f6;
+      color: $black;
+      min-width: 62px;
+      max-width: 62px;
+      padding: 0.75rem 0.5rem;
+      margin: 4px;
+      font-weight: 400;
+      transition: all 0.2s;
+      font: normal normal normal 14px/24px Roboto; //Changed parameters to single line
+      letter-spacing: 0; //changed to 0
+      font-weight: 500; //added a little bit of weight to 500
+
+      &:hover {
+        border-color: $mid-gray;
+        background-color: #f6f6f6;
+      }
+
+      &.active {
+        border-color: $black !important;
+        background-color: #f6f6f6;
+      }
+    }
+  }
+
+  .size-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .embroidery-option {
+    background-color: transparent;
+    border: none !important;
+    padding: 0 !important;
+
+    .custom-control-label::before {
+      background-color: $white;
+      border-color: $mid-gray;
+      border-radius: 0;
+      height: 20px;
+      width: 20px;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: $primary-blue;
+      border-color: $primary-blue;
+    }
+
+    .custom-control-label {
+      padding-top: 2px;
+    }
+  }
+
+  .quantity-selector {
+    border: 1px solid $light-gray;
+    border-radius: 6px;
+    background-color: $white;
+    padding: 0;
+
+    .btn,
+    .form-control {
+      border: none;
+      background-color: transparent;
+    }
+
+    .form-control {
+      border-left: 1px solid $light-gray;
+      border-right: 1px solid $light-gray;
+      background-color: transparent !important;
+    }
+  }
+
+  .add-to-bag-btn {
+    width: 154px;
+    height: 50px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    color: $white;
+    padding: 0.75rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    .add-to-bag-text{ //Add specific properties to the add to bag button text separated
+      font-size: 16px !important;
+      font: normal normal normal 16px/19px Roboto;
       letter-spacing: 0.8px;
-      text-transform: uppercase;
+      font-weight: 100;
+      line-height: 19px;
     }
   }
 }
@@ -369,8 +395,10 @@ body {
   border-left: 0px !important;
   border-right: 0px !important;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px; //Change from size from 18 to 20px
   outline: none !important;
+  color: $black; //Changed color to black and opacity 1
+  opacity: 1;
 
   &:focus {
     outline: none !important;
@@ -450,7 +478,8 @@ body {
   overflow: hidden;
   background-color: $white;
   padding: 0;
-  width: 200px;
+  width: 180px; //Changed quantity selector width to 180px and height to 50px
+  height: 50px;
 
   .btn,
   .form-control {
@@ -480,7 +509,7 @@ body {
   margin-top: 0.2rem;
   width: 24px;
   height: 24px;
-  border: 1px solid #000;
+  border: 2px solid #000; //Changed to 1 px to 2px in the border 
   margin-left: -44px;
   margin-top: 15px !important;
   border-radius: 2px;
@@ -507,6 +536,8 @@ body {
 .embroidery-content .price {
   font-weight: 400;
   font-size: 14px;
+  color: $black; //Color set to black and opacity 1
+  opacity: 1;
 }
 
 .embroidery-content .subtext {

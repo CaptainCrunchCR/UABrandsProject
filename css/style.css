@@ -9213,10 +9213,13 @@ body {
 
 #quickViewModal .modal-dialog {
   max-width: 750px;
+  opacity: 1;
 }
 #quickViewModal .modal-content {
-  border-radius: 8px;
+  border-radius: 12px;
   border: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 #quickViewModal .modal-header {
   border-bottom: none;
@@ -9225,6 +9228,10 @@ body {
 #quickViewModal .modal-header .close {
   padding: 0.5rem;
   margin: -0.5rem -0.5rem -0.5rem auto;
+  color: #000000;
+  opacity: 1;
+  font-size: 2.5rem;
+  font-weight: lighter;
 }
 #quickViewModal .modal-body {
   padding: 1rem 2.5rem 2.5rem 2.5rem;
@@ -9259,141 +9266,157 @@ body {
   text-transform: uppercase;
 }
 #quickViewModal .product-details h2 {
-  font-size: 22px;
-  line-height: 25px;
-  font-weight: 400;
+  font: normal normal normal 22px/25px Roboto;
   letter-spacing: 0px;
   color: #000000;
   margin-bottom: 1rem;
+  opacity: 1;
+  font-weight: 450;
 }
-#quickViewModal .product-details .product-rating {
+#quickViewModal .product-rating {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  gap: 4px;
   margin-bottom: 1rem;
 }
-#quickViewModal .product-details .product-rating .stars {
+#quickViewModal .product-rating .stars {
   color: #FEA124;
 }
-#quickViewModal .product-details .product-rating .stars img {
+#quickViewModal .product-rating .stars img {
   width: 14px;
   height: 13px;
   margin-right: 2px;
 }
-#quickViewModal .product-details .rating-count,
-#quickViewModal .product-details .view-detail {
+#quickViewModal .product-rating .rating-count {
+  line-height: 20px;
   font-size: 14px;
-  color: #9B9B9B;
-  margin-left: 0.5rem;
+  font: normal normal normal 14px/20px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+  font-weight: 500;
 }
-#quickViewModal .product-details .view-detail {
+#quickViewModal .view-detail {
   text-decoration: underline;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   letter-spacing: 0px;
   color: #404040;
+  padding-right: 10px;
 }
-#quickViewModal .product-details .price-range {
-  font-size: 26px;
-  line-height: 30px;
-  font-weight: 700;
+#quickViewModal .price-range {
+  font: normal normal normal bold 26px/30px Roboto;
   letter-spacing: 0px;
+  opacity: 1;
+  color: #000000;
 }
-#quickViewModal .product-details .price-range .red-clr {
+#quickViewModal .price-range .red-clr {
   color: #D0011B;
 }
-#quickViewModal .product-details .price-add-info {
-  font-size: 14px;
-  line-height: 15px;
+#quickViewModal .price-add-info {
+  font: normal normal normal 14px/15px Roboto;
   font-weight: 400;
   letter-spacing: 0px;
   color: #000000;
+  opacity: 1;
 }
-#quickViewModal .product-details .fit-options .btn {
-  width: 110px;
+#quickViewModal .fit-options .btn {
+  width: 100px;
   height: 34px;
-  font-size: 16px;
-  line-height: 32px;
   font-weight: 400;
   letter-spacing: 0px;
   text-transform: capitalize;
   padding: 0;
-  margin-right: 0.5rem;
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
   border-radius: 6px !important;
-  border: 1px solid #a6a6a6;
+  border: 1px solid #A6A6A6;
   background-color: #ffffff;
   color: #404040;
   text-align: center;
+  opacity: 1;
 }
-#quickViewModal .product-details .fit-options .btn.active {
-  background-color: #000000;
+#quickViewModal .fit-options .btn .btn-text {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 2px;
+  display: block;
+}
+#quickViewModal .fit-options .btn.active {
+  background: #000000 0% 0% no-repeat padding-box;
   color: #ffffff;
   border-color: #000000;
   font-weight: 500;
 }
-#quickViewModal .product-details .fit-options .btn:hover {
+#quickViewModal .fit-options .btn:hover {
   border-color: #000000;
 }
-#quickViewModal .product-details .fit-options .btn,
-#quickViewModal .product-details .fit-options .btn:focus,
-#quickViewModal .product-details .fit-options .btn:focus-visible,
-#quickViewModal .product-details .fit-options input:focus,
-#quickViewModal .product-details .fit-options label:focus {
+#quickViewModal .fit-options .btn,
+#quickViewModal .fit-options .btn:focus,
+#quickViewModal .fit-options .btn:focus-visible,
+#quickViewModal .fit-options input:focus,
+#quickViewModal .fit-options label:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-#quickViewModal .product-details .color-selector label {
+#quickViewModal .color-selector label {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-#quickViewModal .product-details .color-selector .custom-select {
+#quickViewModal .color-selector .custom-select {
   border-radius: 6px;
   border: 1px solid #DDDDDD;
   height: auto;
   padding: 0.75rem;
   background-color: #F6F6F6;
 }
-#quickViewModal .product-details .color-dropdown label {
-  font-size: 13px;
-  font-weight: bold;
+#quickViewModal .color-dropdown label {
+  font: normal normal bold 12px/14px Roboto;
   margin-bottom: 0.5rem;
+  opacity: 1;
+  color: #000000;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-toggle.custom-dropdown-toggle {
+#quickViewModal .color-dropdown .dropdown-toggle.custom-dropdown-toggle {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.75rem;
   width: 100%;
-  border: 1px solid #404040;
+  border: 1px solid #DDDDDD;
   border-radius: 6px;
   padding: 1.125rem 1rem;
-  background-color: #F6F6F6;
+  background: #F6F6F6 0% 0% no-repeat padding-box;
   color: #000000;
   font-size: 15px;
   text-align: left;
   justify-content: flex-start;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-toggle.custom-dropdown-toggle .swatch-preview {
+#quickViewModal .color-dropdown .dropdown-toggle.custom-dropdown-toggle .swatch-preview {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 1px solid #DDDDDD;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-toggle.custom-dropdown-toggle .selected-label {
+#quickViewModal .color-dropdown .dropdown-toggle.custom-dropdown-toggle .selected-label {
   flex-grow: 1;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-toggle.custom-dropdown-toggle::after {
+#quickViewModal .color-dropdown .dropdown-toggle.custom-dropdown-toggle::after {
   margin-left: auto;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-menu {
+#quickViewModal .color-dropdown .dropdown-menu {
   width: 100%;
   border-radius: 6px;
   padding: 0;
   max-height: 280px;
   overflow-y: auto;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-menu .dropdown-item {
+#quickViewModal .color-dropdown .dropdown-menu .dropdown-item {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -9401,10 +9424,10 @@ body {
   padding: 0.65rem 1rem;
   color: #000000;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-menu .dropdown-item:hover {
+#quickViewModal .color-dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #F8F8F8;
 }
-#quickViewModal .product-details .color-dropdown .dropdown-menu .dropdown-item .color-circle {
+#quickViewModal .color-dropdown .dropdown-menu .dropdown-item .color-circle {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -9412,106 +9435,115 @@ body {
   border: 1px solid #DDDDDD;
   display: inline-block;
 }
-#quickViewModal .product-details .size-info .size-label,
-#quickViewModal .product-details .size-info .price-label {
+#quickViewModal .size-info .size-label,
+#quickViewModal .size-info .price-label {
   font-size: 12px;
   line-height: 14px;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 1.2px;
   color: #000000;
   text-transform: uppercase;
 }
-#quickViewModal .product-details .size-info #selected-size,
-#quickViewModal .product-details .size-info #selected-price {
+#quickViewModal .size-info #selected-size,
+#quickViewModal .size-info #selected-price {
   font-size: 12px;
   font-weight: 400;
   color: #404040;
 }
-#quickViewModal .product-details .size-info #availability-message {
+#quickViewModal .size-info #availability-message {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
 }
-#quickViewModal .product-details .size-buttons .size-btn {
-  border: 1px solid #DDDDDD;
+#quickViewModal .size-buttons .size-btn {
+  border: none;
   border-radius: 6px;
   background-color: #f6f6f6;
   color: #000000;
   min-width: 62px;
   max-width: 62px;
   padding: 0.75rem 0.5rem;
-  font-size: 14px;
   margin: 4px;
   font-weight: 400;
   transition: all 0.2s;
+  font: normal normal normal 14px/24px Roboto;
+  letter-spacing: 0;
+  font-weight: 500;
 }
-#quickViewModal .product-details .size-buttons .size-btn:hover {
+#quickViewModal .size-buttons .size-btn:hover {
   border-color: #9B9B9B;
   background-color: #f6f6f6;
 }
-#quickViewModal .product-details .size-buttons .size-btn.active {
+#quickViewModal .size-buttons .size-btn.active {
   border-color: #000000 !important;
   background-color: #f6f6f6;
 }
-#quickViewModal .product-details .size-btn:focus {
+#quickViewModal .size-btn:focus {
   outline: none;
   box-shadow: none;
 }
-#quickViewModal .product-details .embroidery-option {
+#quickViewModal .embroidery-option {
   background-color: transparent;
   border: none !important;
   padding: 0 !important;
 }
-#quickViewModal .product-details .embroidery-option .custom-control-label::before {
+#quickViewModal .embroidery-option .custom-control-label::before {
   background-color: #ffffff;
   border-color: #9B9B9B;
   border-radius: 0;
   height: 20px;
   width: 20px;
 }
-#quickViewModal .product-details .embroidery-option .custom-control-input:checked ~ .custom-control-label::before {
+#quickViewModal .embroidery-option .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #007BFF;
   border-color: #007BFF;
 }
-#quickViewModal .product-details .embroidery-option .custom-control-label {
+#quickViewModal .embroidery-option .custom-control-label {
   padding-top: 2px;
 }
-#quickViewModal .product-details .quantity-selector {
+#quickViewModal .quantity-selector {
   border: 1px solid #DDDDDD;
   border-radius: 6px;
   background-color: #ffffff;
   padding: 0;
 }
-#quickViewModal .product-details .quantity-selector .btn,
-#quickViewModal .product-details .quantity-selector .form-control {
+#quickViewModal .quantity-selector .btn,
+#quickViewModal .quantity-selector .form-control {
   border: none;
   background-color: transparent;
 }
-#quickViewModal .product-details .quantity-selector .form-control {
+#quickViewModal .quantity-selector .form-control {
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
   background-color: transparent !important;
 }
-#quickViewModal .product-details .add-to-bag-btn {
-  max-width: 150px;
+#quickViewModal .add-to-bag-btn {
+  width: 154px;
+  height: 50px;
   background: #000000 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
   color: #ffffff;
   padding: 0.75rem;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+}
+#quickViewModal .add-to-bag-btn .add-to-bag-text {
+  font-size: 16px !important;
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+  line-height: 19px;
 }
 
 .quantity-input-cls {
   border-left: 0px !important;
   border-right: 0px !important;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   outline: none !important;
+  color: #000000;
+  opacity: 1;
 }
 .quantity-input-cls:focus {
   outline: none !important;
@@ -9535,30 +9567,6 @@ body {
   box-shadow: none;
 }
 
-/* Temporarily disabling mobile styles to focus on Web View */
-/*
-@media (max-width: 768px) {
-    #quickViewModal .modal-body {
-        padding: 1rem;
-    }
-
-    #quickViewModal .row .col-md-7 {
-        margin-top: 1rem;
-    }
-
-    #quickViewModal .product-details .price-range,
-    #quickViewModal .product-details .price-add-info {
-        text-align: left;
-    }
-
-    #quickViewModal .product-details .embroidery-option {
-        background-color: $light-blue-bg;
-        border: 1px solid $primary !important;
-        border-radius: 4px;
-        padding: 1rem !important;
-    }
-}
-*/
 .embroidery-option {
   background-color: #f8f8f8;
   border-radius: 8px;
@@ -9607,7 +9615,8 @@ body {
   overflow: hidden;
   background-color: #ffffff;
   padding: 0;
-  width: 200px;
+  width: 180px;
+  height: 50px;
 }
 .quantity-selector .btn,
 .quantity-selector .form-control {
@@ -9635,7 +9644,7 @@ body {
   margin-top: 0.2rem;
   width: 24px;
   height: 24px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   margin-left: -44px;
   margin-top: 15px !important;
   border-radius: 2px;
@@ -9662,6 +9671,8 @@ body {
 .embroidery-content .price {
   font-weight: 400;
   font-size: 14px;
+  color: #000000;
+  opacity: 1;
 }
 
 .embroidery-content .subtext {

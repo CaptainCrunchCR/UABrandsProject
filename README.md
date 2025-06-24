@@ -1,6 +1,28 @@
-# Product Quick View Modal
+# Product Quick View Modal 2.0
 
 A modern, responsive product quick view modal component for e-commerce websites. This project demonstrates a clean and user-friendly interface for displaying product details, size selection, color options, and purchase functionality.
+
+## 📝 Pixel-Perfect Improvements 
+
+# Summary of CSS Changes in Quick View Modal
+
+| UI Section              | Description (Human Language)                                                                 | Technical Details                                                                 |
+|-------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Modal Dialog            | Set fixed width to match design specs                                                        | `max-width: 750px;`, `opacity: 1`                                                 |
+| Modal Content           | Increased border radius, ensured white background                                            | `border-radius: 12px;`, `background: #ffffff`, `opacity: 1`                        |
+| Close Button            | Made button larger and lighter                                                               | `font-size: 2.5rem;`, `font-weight: lighter`, `opacity: 1`                         |
+| Heading Title           | Adjusted font styling and weight                                                             | `font: 22px/25px Roboto`, `font-weight: 450`                                      |
+| Rating Section          | Ensured baseline alignment and added spacing                                                 | `align-items: baseline`, `gap: 4px`                                               |
+| View Full Detail        | Added right padding                                                                          | `padding-right: 10px`                                                             |
+| Price Display           | Unified font styling and color adjustments                                                   | `font: bold 26px/30px Roboto`, `color: $black`, `opacity: 1`                       |
+| Fit Options Buttons     | Reduced width, fixed alignment and added border                                              | `width: 100px;`, `margin-left: 0`, `border: 1px solid #A6A6A6`                     |
+| Color Dropdown Label    | Changed spacing and color for better clarity                                                 | `letter-spacing: 1.2px;`, `color: $black`, `opacity: 1`                            |
+| Size Buttons            | Removed borders, improved font styling                                                       | `border: none`, `font: 14px/24px Roboto`, `font-weight: 500`                       |
+| Quantity Selector       | Set fixed width/height and refined border appearance                                         | `width: 180px`, `height: 50px`, `border: 1px solid #dee2e6`                        |
+| Embroidery Checkbox     | Adjusted border size and appearance when checked                                             | `border: 2px solid #000`, `background-image` with SVG checkmark                   |
+| Add to Bag Button       | Standardized dimensions and text styling                                                     | `width: 154px`, `.add-to-bag-text { font-size: 16px; font-weight: 100; }`         |
+| Mobile Responsiveness   | Adjusted paddings and element widths for small screens                                       | `padding-left/right: 0.25rem`, `.btn width: 90px`, `.quantity-selector: 170px`    |
+
 
 ## 🚀 Features
 
@@ -148,6 +170,7 @@ The modal is fully responsive and optimized for:
 - **Desktop**: Full modal with side-by-side layout
 - **Tablet**: Adjusted spacing and button sizes
 - **Mobile**: Stacked layout with optimized touch targets
+
 
 ## 👨‍💻 Author
 
